@@ -1,0 +1,311 @@
+/* ============================= */
+/* RESET + FONT */
+/* ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f8ff; /* light stylish background */
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* ============================= */
+/* ROOT */
+.dental-root {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 12px;
+}
+
+/* ============================= */
+/* HEADER */
+.dental-header {
+  text-align: center;
+  padding: 18px 15px;
+  background: linear-gradient(135deg, #eef6ff, #dbeafe);
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.dental-logo {
+  width: 90px;
+  max-width: 110px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.dental-header h1 {
+  font-size: 28px; /* mobile */
+  font-weight: 900;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.dental-header p {
+  font-size: 15px;
+  color: #334155;
+  font-weight: 500;
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* Desktop */
+@media(min-width:768px){
+  .dental-header h1 {
+    font-size: 38px;
+  }
+  .dental-header p {
+    font-size: 17px;
+  }
+  .dental-header {
+    padding: 28px 15px;
+  }
+}
+
+/* ============================= */
+/* HERO */
+.dental-hero {
+  background: linear-gradient(180deg, #ffffff, #e0f2ff);
+  border-radius: 25px;
+  padding: 35px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto;
+  border-radius: 20px;
+}
+
+.dental-hero h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 18px;
+  line-height: 1.3;
+}
+
+.dental-hero button {
+  padding: 14px 36px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dental-hero button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37,99,235,0.3);
+}
+
+/* ============================= */
+/* SECTION TITLES */
+.dental-root h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.dental-root h3::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  display: block;
+  margin-top: 6px;
+  border-radius: 12px;
+}
+
+/* ============================= */
+/* OFFERS */
+.dental-offers {
+  background: #ffffff;
+  padding: 30px 25px;
+  margin-bottom: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.dental-offers ul {
+  list-style: none;
+}
+
+.dental-offers li {
+  background: #dbeafe;
+  padding: 12px 18px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #1e3a8a;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+/* ============================= */
+/* FORM */
+.dental-form {
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  margin-bottom: 50px;
+}
+
+.dental-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dental-form input,
+.dental-form select,
+.dental-form textarea {
+  padding: 14px 18px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #cbd5e1;
+}
+
+.dental-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.dental-form button {
+  padding: 16px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dental-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37,99,235,0.3);
+}
+
+.error {
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.success-msg {
+  color: #16a34a;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* BRANCHES */
+.dental-branches {
+  margin-bottom: 50px;
+}
+
+.branch-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.branch-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.branch-card button {
+  margin-top: 14px;
+  padding: 14px;
+  width: 100%;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* WHY CHOOSE US */
+.dental-why {
+  background: linear-gradient(180deg, #e0f2ff, #ffffff);
+  padding: 40px 25px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.dental-why li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #1e3a8a;
+}
+
+/* ============================= */
+/* FOOTER */
+.dental-footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #2563eb;
+  border-radius: 25px 25px 0 0;
+  color: #ffffff;
+}
+
+.dental-footer h3 {
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffffff, #93c5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================= */
+/* DESKTOP */
+@media(min-width:768px){
+  .dental-hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    text-align:left;
+  }
+  .hero-image{
+    max-width:500px;
+  }
+  .dental-form form{
+    max-width:540px;
+    margin:auto;
+  }
+  .dental-branches{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+  }
+}
